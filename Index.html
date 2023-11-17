@@ -1,0 +1,478 @@
+<html lang="en">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="faviconami fix.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+      .header {
+padding: 25px;
+text-align: center;
+}
+html{
+  scroll-behavior: smooth;
+cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAADZ0+MAAAAAAFpUYwACBg8AK2DWACBU4wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERETMRERERERERERERERERERMjERERERERERERERETMREyMRERERERERERERERETMTIxERERERERERERERERETMjERERERERERERERERERMDMREREREREREREREREREwRDMRERERERERERERERETBEMTMRERERERERERERERMFUxETEREREREREREREREwVTERERERERERERERERETBVMRERERERERERERERERMFUxEREREREREREREREREwVTERERERERERERERERERNVMRERERERERERERERERETMxERERERERERERERERERH////////////////////////////////////////////////////////////////////////////////////////////5////8f///OP///5H////D////h////wP///4J///8Hf//+D////B////g////wf///8P////H////w=='), auto;)
+}
+. column {
+}
+. column {
+float: left;
+padding: 10px;
+}
+.column.side {
+float: left;
+width: 25%;
+height: 300px;
+background-color : yellow;
+}
+.column.middle {
+float: left;
+width: 50%;
+height: 300px;
+background-color : lightyellow;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.navbar{
+
+
+position:sticky;
+width:100%;
+top:0;
+
+
+}
+.navbar div.out{
+
+float:left;
+font-size:16px;
+padding:14px 16px;
+margin:auto;
+text-align:center;
+text-decoration:none;
+color:white;
+width:20%;
+height: 70px;
+text-shadow: 
+0 0 10px white,0 0 20px white,0 0 25px #fffa91;
+font-family:cambria;
+ 
+}
+
+div.out{
+background:rgba(0,0,0,0.6);
+border-bottom: 2px solid rgba(255,255,255,0.7);
+
+}
+.in a{
+display:block;
+}
+
+	
+
+
+div.out:hover{
+color:#111;
+background: #BAFF39;
+
+}
+div.in{
+	background-color: #6E6E6E;
+	opacity:0;
+	
+	height:75px;
+	transition:1s;
+	
+	margin-top:50px;
+	margin-left:-15px;
+	
+	border-radius:10%;
+}
+div.in:hover{
+background-color: #9e9d9d;
+}
+div.out:hover .in{
+	opacity:1;
+}
+a{
+text-decoration:none;
+font-family:cambria;
+margin-top:10%;
+text-align:center;
+font-size:14px;
+color : white;
+
+
+}
+
+a:hover{
+color : white;
+transition: 0.3s;
+      text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 32px #fff,
+      0 0 50px #26abff,
+      0 0 92px #26abff,
+      0 0 102px #26abff,
+      0 0 151px #26abff;
+}
+h1{
+font-family:cambria;
+font-size:50px;
+}
+b.a{
+color : #ff7575;
+ text-shadow:
+      0 0 10px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #f2b7b3,
+      0 0 92px #f2b7b3,
+      0 0 102px #f2b7b3,
+      0 0 170px #f2b7b3;
+}
+b.b{
+color : #fcc26a;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #fadbaf,
+      0 0 92px #fadbaf,
+      0 0 102px #fadbaf,
+      0 0 170px #fadbaf;
+}
+b.c{
+color : #f0f768;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #f0f768,
+      0 0 92px #f0f768,
+      0 0 102px #f0f768,
+      0 0 170px #f0f768;
+}
+b.d{
+color : #70ff63;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #a9ff63,
+      0 0 92px #a9ff63,
+      0 0 102px #a9ff63,
+      0 0 170px #a9ff63;
+}
+b.e{
+color : #6afca5;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #6afca5,
+      0 0 92px #6afca5,
+      0 0 102px #6afca5,
+      0 0 170px #6afca5;
+}
+b.f{
+color : #62f7fc;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #62f7fc,
+      0 0 92px #62f7fc,
+      0 0 102px #62f7fc,
+      0 0 170px #62f7fc;
+}
+b.g{
+color : #698dfa;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #698dfa,
+      0 0 92px #698dfa,
+      0 0 102px #698dfa,
+      0 0 170px #698dfa;
+}
+b.h{
+color : white;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #a773fa,
+      0 0 92px #a773fa,
+      0 0 102px #a773fa,
+      0 0 170px #a773fa;
+}
+b.i{
+color : #ed7cfc;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #ed7cfc,
+      0 0 92px #ed7cfc,
+      0 0 102px #ed7cfc,
+      0 0 170px #ed7cfc;
+}
+b.j{
+color : #fa82d4;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #fa82d4,
+      0 0 92px #fa82d4,
+      0 0 102px #fa82d4,
+      0 0 170px #fa82d4;
+}
+b.k{
+color : #fc88a5;
+ text-shadow:
+      0 0 13px #fff,
+      0 0 23px #fff,
+      0 0 33px #fff,
+      0 0 43px #fff,
+      0 0 53px #fc88a5,
+      0 0 92px #fc88a5,
+      0 0 102px #fc88a5,
+      0 0 170px #fc88a5;
+}
+body{
+background:url('https://images.pexels.com/photos/927414/pexels-photo-927414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+background-color:grey;
+background-blend-mode:multiply;
+
+}
+.bg-adjust{
+opacity:70%;
+}
+.ayam{
+
+background:rgba(0,0,0,0.4);
+margin:auto;
+padding: 15 px;
+transition: width 1s, height 1s, transform 1s;
+width: 25%;
+height: 140px;
+border:4px solid white;
+box-shadow: 0 0 20px white;
+}
+.ayam:active{
+border:4px solid #faf8c8;
+background:rgba(71,53,3,0.3);
+transition:1s;
+width:98%;
+height : 400px;
+box-shadow: 0 0 20px #faf8c8;
+
+}
+.ayam p {
+  margin: 5%;
+  font-weight: bold;
+  color: white;
+  opacity : 0;
+  }
+  .ayam:active p{
+  opacity:1;
+  transition:1s;
+  }
+ 
+ .TEKS {
+ text-align:center;
+text-decoration:none;
+color:white;
+font-size:40px;
+transition:1s;
+ }
+ .ayam:active .TEKS{
+ text-shadow: 
+0 0 4px white,0 0 8px white,0 0 10px #fffa91;
+transition:1s;
+font-size:60px;
+ }
+ .ayam:active .jamal{
+  opacity:0;
+ transition:1s;
+ }
+ .teks_kecil{
+text-align:justify;
+text-decoration:none;
+color:white;
+text-shadow: 
+0 0 4px #ffd3ea;
+font-family:cambria;
+font-size:20px;
+padding:5px;
+margin-left:10%;
+ }
+ .teks_kecil b{
+ color:#ffd3ea;
+ }
+ .jamal{
+ opacity:1;
+ }
+ .jamal:active{
+ opacity:0;
+ transition:1s;
+ }
+ .footerx{
+ width:100%;
+position:sticky;
+bottom:0;
+ background:rgba(252, 186, 3,0.7);
+margin:auto;
+text-align:center;
+ text-decoration:none;
+ }
+ .teksfoot{
+
+font-family:cambria;
+font-size:30px;
+color : white;
+padding-left:10px;
+}
+
+.siapaaku_box{
+background:rgba(0,0,0,0.6);
+margin:auto;
+padding: 15 px;
+
+width: 100%;
+height: 470px;
+
+}
+.siapaaku_title{
+text-align:left;
+text-decoration:none;
+color:#fd82ff;
+font-size:40px;
+transition:1s;
+font-style:courier-new;
+padding:15px;
+text-shadow:
+      0 0 7px #fd82ff,
+      0 0 10px #e9b8fc;
+
+}
+.footer {
+background-color: rgb(0, 255, 234);
+color: yellow;
+padding: 10px;
+text-align: center;
+height: 600px;
+width: 100%;
+}
+
+
+</style>
+<script>
+function f(n){
+	document.getElementByTagName("div")[n].style.background="#67c4e0"
+}
+</script>
+<body >
+      <div class="header">
+<h1>
+<b class="a">W</b>
+<b class="b">E</b>
+<b class="c">B</b>
+<b class="d"> </b>
+<b class="e">B</b>
+<b class="f">E</b>
+<b class="g">L</b>
+<b class="h">A</b>
+<b class="i">J</b>
+<b class="j">A</b>
+<b class="k">R</b>
+
+</h1></div>
+<div class="navbar" style="width:100%;">
+
+<a href="#INTRO"><div class="out" onclick="f(0);"><a href="#INTRO">HOME<a></div></a>
+<div class="out" onclick="f(1);">INFORMATIKA
+	<div class="in">
+		<a href="HTML.html">HTML</a>
+		<a href="CSS.html">CSS</a>
+	</div>
+</div>
+<div class="out" onclick="f(2);">SOSIOLOGI
+<div class="in">
+		<a href="Kelompok Sosial.html">KELOMPOK SOSIAL</a>
+		<a href="Struktur Sosial.html">STRUKTUR SOSIAL</a>
+	</div>
+	</div>
+<div class="out" href="" onclick="f(3);">PKN
+<div class="in">
+		<a href="Pancasila.html">PANCASILA</a>
+		<a href="Pasal 28.html">PASAL 28</a>
+	</div>
+	</div>
+<div class="out" href="" onclick="f(4);">SEJARAH
+<div class="in">
+		<a href="Kolonialisme.html">KOLONIALISME</a>
+		<a href="Imperialisme.html">IMPERIALISME</a>
+	</div>
+	</div>
+<br><br><br><br><br><br>
+<div id="INTRO"  class="ayam" >
+<h1  class="TEKS">WEBSITE APA INI?</h1>
+<h5 class="jamal" style="color:#fffab3d9;text-align:center;">HOLD ME!</h5>
+<p class="teks_kecil">Website ini adalah sebuah <b>website pembelajaran</b> yang ditujukan untuk menampung seluruh materi kelas 11 Semester 1 sehingga menjadi mudah di akses.
+Website ini menampung mata pelajaran yang wajib maupun minat di kelas 11 Kolese Kanisius. Terdapat beberapa mata pelajaran
+ yang ada di website ini, yaitu :<b>Informatika, Sosiologi, Matematika, dan Sejarah</b>.</p>
+</div><br><br><br>
+<div class="row">
+      <div class="column side">
+            <h1 style="text-align:center;"><img src="cc.png" style="width:100px;height:100px;"></h1>
+      </div><div class="column middle">
+      <h1 style="text-align: center;">Melalui website ini, diharapkan agar dapat bermanfaat bagi seluruh pelajar di Indonesia. Selamat Belajar!</h1>
+      </div><div class="column side">
+      <h1 style="text-align:center;"><img src="amdg.png" style="width:100px;height:100px;"></h1>
+      </div></div>
+<br><br>
+
+<footer>
+      <div id="INTRO"  class="siapaaku_box" >
+            <table style="width:100%;">
+            
+            <h1  class="siapaaku_title">I D E N T I T A S</h1>
+            <tr>
+            <td><p class="teks_kecil"> Nama          : Darren Nathan Leonardi</p></td>
+            <td rowspan="6"><img src="foto.jpg" style="margin-left:50%;width:250px;height:300px;box-shadow:0 0 5px white,0 0 10px yellow;border-radius:10%;"></td></tr>
+            <tr><td><p class="teks_kecil"> Kelas         : XI-5</p></td></tr>
+            <tr><td><p class="teks_kecil"> Absen         : 9</p></td></tr>
+            <tr><td><p class="teks_kecil"> Hobi          : Olahraga, Bermain Game</p></td></tr>
+            <tr><td><p class="teks_kecil"> Tanggal Lahir : 22-07-2007</p></td></tr>
+            <tr><td><p class="teks_kecil"> Tempat Lahir  : Jakarta</p></td></tr>
+            <tr><td><p class="teks_kecil"> Instagram     : <a href="https://instagram.com/dnleonardi7?igshid=OGQ5ZDc2ODk2ZA==" style="font-size:120%; color :rgb(0, 0, 190)">@dnleonardi7</a></p></td></tr>
+            <table>
+            </div>
+</footer>
+</body>
